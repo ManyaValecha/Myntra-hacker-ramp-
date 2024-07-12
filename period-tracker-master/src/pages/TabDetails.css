@@ -1,0 +1,123 @@
+#width-details-screen {
+  max-width: 320px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#general-block {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  height: 90px;
+  width: 100%;
+}
+
+#inline-block {
+  width: 150px;
+  height: 70px;
+}
+
+p.h_style-basic {
+  font-size: 22px;
+  color: var(--ion-color-dark-basic);
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+p.h_style-dark {
+  font-size: 22px;
+  color: var(--ion-color-dark-dark);
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+p.p_style {
+  font-size: 13px;
+  color: var(--ion-color-medium);
+  margin-top: 5px;
+}
+
+p.no-periods {
+  font-size: 13px;
+  text-align: center;
+}
+
+#vertical-line-basic {
+  width: 2px;
+  height: 70px;
+  margin-top: 5px;
+  background: #e2e3e7;
+}
+
+#vertical-line-dark {
+  width: 2px;
+  height: 70px;
+  margin-top: 5px;
+  background: #717274;
+}
+
+#progress-block {
+  width: 100%;
+  border-radius: 15px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ion-progress-bar {
+  height: 8px;
+  border-radius: 20px;
+}
+
+ion-progress-bar.current-progress-basic,
+ion-progress-bar.current-progress-dark {
+  height: 8px;
+  border-radius: 20px;
+}
+
+/* basic group */
+ion-progress-bar.basic::part(stream),
+ion-progress-bar.current-progress-basic::part(stream) {
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+ion-progress-bar.basic::part(progress),
+ion-progress-bar.current-progress-basic::part(progress) {
+  border-radius: 20px;
+  background: var(--ion-color-dark-basic);
+}
+
+ion-progress-bar.basic::part(track) {
+  border-radius: 20px;
+  background: var(--ion-color-light-basic);
+}
+
+ion-progress-bar.current-progress-basic::part(track) {
+  border-radius: 20px;
+  background: var(--ion-color-transparent-basic);
+}
+
+/* dark group */
+ion-progress-bar.dark::part(stream),
+ion-progress-bar.current-progress-dark::part(stream) {
+  border-radius: 20px;
+  background: var(--ion-color-calendar-dark);
+}
+
+ion-progress-bar.dark::part(progress),
+ion-progress-bar.current-progress-dark::part(progress) {
+  border-radius: 20px;
+  background: var(--ion-color-dark-dark);
+}
+
+ion-progress-bar.dark::part(track) {
+  border-radius: 20px;
+  background: rgba(var(--ion-color-light-dark-rgb), 0.4);
+}
+
+ion-progress-bar.current-progress-dark::part(track) {
+  border-radius: 20px;
+  background: rgba(var(--ion-color-light-dark-rgb), 0.3);
+}

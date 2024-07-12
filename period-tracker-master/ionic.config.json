@@ -1,0 +1,8 @@
+{
+  "name": "peri",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "ddb5d18d"
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeVastra</title>
+    <link rel="stylesheet" href="fashion.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Screen 1 -->
+        <div id="screen1" class="screen">
+            <img src="PHOTO1111.png" alt="Virtual Try-on">
+            <div class="text-block">
+                <p>Experience the future of fashion with VibeVastra's virtual try-ons</p>
+                <button onclick="showScreen('screen2')">Virtual Try-on</button>
+            </div>
+        </div>
+
+        <!-- Screen 2 -->
+        <div id="screen2" class="screen hidden">
+            <div class="header">
+                <h1>Hello, VIBE VASTRA HERE</h1>
+                <p>Your Mood Recommended Outfits</p>
+            </div>
+            <div class="content">
+                <div class="item">
+                    <h2>Explore Casual Wears</h2>
+                    <img src="origin_web.jpg" alt="Casual Wear">
+                    <button onclick="showScreen('screen3')">Show More</button>
+                </div>
+                <div class="item">
+                    <h2>Embrace a Sporty Look</h2>
+                    <img src="pic3.jpg" alt="Sporty Look">
+                </div>
+            </div>
+            <div class="offers">
+                <h2>Offers</h2>
+                <div class="offer">
+                    <img src="Pic2.jpg" alt="Party Wear">
+                    <p>Get 30% Off on party wears</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 3 -->
+        <div id="screen3" class="screen hidden">
+            <div class="product-image">
+                <img src="polka.jpg" alt="Crop Top">
+            </div>
+            <div class="product-info">
+                <h2>Crop Top</h2>
+                <div class="sizes">
+                    <span>Size</span>
+                    <button>XS</button>
+                    <button>S</button>
+                    <button class="selected">M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                </div>
+                <div class="price">
+                    <span class="discounted-price">$55</span>
+                    <span class="original-price">$58</span>
+                    <span class="discount">30% off</span>
+                </div>
+                <button class="add-to-bag">Add to Bag</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.add('hidden');
+            });
+            document.getElementById(screenId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
